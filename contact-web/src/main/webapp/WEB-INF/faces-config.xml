@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <application>
+        <resource-bundle>
+            <base-name>messages</base-name>
+            <var>messages</var>
+        </resource-bundle>
+        <message-bundle>messages</message-bundle>
+    </application>
+    <converter>
+        <converter-for-class>java.lang.Enum</converter-for-class>
+        <converter-class>javax.faces.convert.EnumConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-id>prettyTimeConverter</converter-id>
+        <converter-class>org.ocpsoft.prettytime.jsf.PrettyTimeConverter</converter-class>
+    </converter>
+</faces-config>
