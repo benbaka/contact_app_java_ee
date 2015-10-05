@@ -17,6 +17,5 @@
     </properties>
   <modules>
     <module>contact-web</module>
-    <module>helloJMS</module>
   </modules>
 </project>
