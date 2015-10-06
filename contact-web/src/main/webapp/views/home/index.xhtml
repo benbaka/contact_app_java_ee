@@ -6,9 +6,19 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-    Thank you Deltaspike !
     
-
+        <h2>Create a Contact</h2>
+        <h:form>
+            <h:panelGrid columns="2">
+            <h:outputLabel value="Name" ></h:outputLabel>
+            <h:inputText value="#{intro.name}" />
+            <h:outputLabel value="Address"></h:outputLabel>
+            <h:inputText value="#{intro.address}" />
+            <h:outputText value="Phone Number" />
+            <h:inputText value="#{intro.phone_number}" />
+            </h:panelGrid>
+            <h:commandButton value="Save" action="#{intro.process_contact}" />
+        </h:form>
     </h:body>
 </html>
 
